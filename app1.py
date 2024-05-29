@@ -81,3 +81,6 @@ st.text("To ensure a sustainable future for both nature and volcanic regions, "
         "and maintain ecosystem services, benefiting both the environment and local communities.\n"
         "Strengthening international cooperation in geosciences will enable better prediction "
         "models and risk management strategies, safeguarding human lives and the natural world.")
+
+image_path = "data/picture.webp"  # Update the path to where your image is stored
+st.image(image_path, caption='Picture created by AI')
