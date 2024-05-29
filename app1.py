@@ -14,6 +14,12 @@ volcano_df = pd.read_csv('data/volcano_ds_pop.csv')
 with open('data/countries.geojson', 'r') as file:
     volcano_geojson = json.load(file)
 
+# Add title and header
+st.title("Introduction to Streamline")
+st.header("World - Volcanoes Intensity")
+
+
+
 fig = px.scatter_mapbox(volcano_df,
                         lat='Latitude',
                         lon='Longitude',
