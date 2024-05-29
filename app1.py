@@ -11,7 +11,7 @@ internet_access_perc = pd.read_csv('./data/share-of-individuals-using-the-intern
 countries = []
 most_recent_year = []
 
-for grp, df in df.groupby("Code"):
+for grp, df in internet_access_perc.groupby("Code"):
     countries.append(grp)
     most_recent_year.append(df["Year"].max())
     
